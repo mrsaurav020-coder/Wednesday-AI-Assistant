@@ -8,18 +8,27 @@ def execute_command(command):
         os.startfile(
             r"C:\Program Files\Google\Chrome\Application\chrome.exe"
         )
+        return "Opening Google Chrome"
 
     # Open Calculator
     elif "open calculator" in command:
         os.system("calc")
+        return "Opening Calculator"
 
     # Open Notepad
     elif "open notepad" in command:
         os.system("notepad")
+        return "Opening Notepad"
 
     # Open VS Code
     elif "open code" in command or "open vscode" in command:
         os.system("code")
+        return "Opening VS Code"
+
+    # Open Paint
+    elif "open paint" in command:
+        os.system("mspaint")
+        return "Opening Paint"
 
     else:
-        print("Command not recognized.")
+        return "Command not recognized."
