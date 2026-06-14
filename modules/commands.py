@@ -9,6 +9,13 @@ def execute_command(command):
             r"C:\Program Files\Google\Chrome\Application\chrome.exe"
         )
         return "Opening Google Chrome"
+    
+    #Open Brave
+    elif "open brave" in command:
+        os.startfile(
+            r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
+        )
+        return "Opening Brave Browser"
 
     # Open Calculator
     elif "open calculator" in command:
